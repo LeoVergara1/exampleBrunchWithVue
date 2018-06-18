@@ -10,5 +10,17 @@ exports.files = {
 };
 
 exports.plugins = {
-  babel: {presets: ['latest']}
+  babel: {presets: ['latest']},
+};
+
+exports.npm = {
+  enabled: true,
+  styles: {
+    bootstrap: ['dist/css/bootstrap.css'],
+  },
+  globals: {
+  },
+  aliases: {
+    'vue': 'vue/dist/vue.common.js'
+  }
 };
